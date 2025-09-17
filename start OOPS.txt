@@ -1,0 +1,166 @@
+What is oop? full explaination.
+OOP stand for object oriented programming language,the main purpose of 
+oop is to deal with real world entity using programming language.
+
+OOPS Features:-
+i.Class
+ii.Object
+iii.Inheritance
+iv.Polymorphism
+v.Encapsulation
+vi.Abstraction:1.Class,2.Interface
+-----------------------------------------------------------------------------------
+Class And Object:-
+
+What is class?
+class is a collection of objects and it does't take any space on memory,
+class is also called as blueprint/logical entity.
+** class ** 
+1.Pre-Defined
+i.Scanner
+ii.console
+iii.System
+iv.String
+
+2.User - Definied
+i.dog
+ii.A 
+ii.Test
+iii.Demo
+
+User-Defined class:-
+A class which is create by java programmer called user-Defined class.
+
+Ex:-class "Class-Name"{
+    ---------
+    //data
+    ---------
+
+    --------------
+    //methods
+    --------------
+}
+-----------------------------------------------------------------------------------
+** Object **
+object:-Object is an instance of class that executed the class.
+Once the object is created ,it takes up space like other variable in memory.
+
+Syntax:- "ClassName" "ObjectName" =   new    "className" ()
+          class-name   obj-reference  DMA    Constructor
+--------------- code------------------------------------------
+class Demo
+{
+    int a = 21;
+    String name = "Gopal";
+
+    void Show(){
+        System.out.println(a+" "+name);
+    }
+}
+class Text
+{
+    public static void main(String[] args){
+        Demo r = new Demo();
+        r.Show();
+    }
+}
+-----------output: 21 Gopal -----------------------
+-------------------------------------------------------------------
+ **Constructor**
+ What is Constructor?Full explaination.
+ Constructor is a Special type of method whose name is same as class name. 
+
+ Note:- 
+i.The main purpose of Constructor is initialize the object.
+
+ii.Every java class has a Constructor.
+
+iii.A Constructor is autometically called at the time of object creation.
+
+iv.A Constructor never contain any return-type including void.
+
+v. class and Constructor name same.
+
+Syntax:-
+ class "class-Name"
+ {
+    "class-Name"()
+    {
+
+    }
+ }
+ 
+
+------------------------------code-----------------------------------------
+class A 
+{
+    int a; String name;
+    A()
+    {
+        a=10;
+        name = "GopalDas";
+    }
+    void Show()
+    {
+        System.out.println(a+" "+name);
+    }
+}
+
+class B
+{
+    public static void main(String[] args)
+    {
+        A ref = new A();
+        ref.Show();
+    }
+}
+------------------------output:- 10 GopalDas----------------------------------------------
+ Types of Constructor:-
+ i.Private
+ ii.Default
+ iii.Parametrized
+ iv.copy
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+1.Default Constructor:-
+
+   What is Default Constructor?
+A Constructor which does not have any parameter is called default Constructor.
+
+Syntax:- 
+class A
+{
+    A() //No any parameter
+    {
+
+    }
+}
+---------------------------------------------------------------------------------------
+2.Parametrized Constructor:-
+   
+   What is Parametrized Constructor?
+A Constructor through which we can pass one or more parameters is called Parametrized Constructor.
+
+Syntax:-Class A{
+    A(int x , String y)
+    {
+
+    }
+}
+-------------------------------------------------------------------------------------------------
+3.Copy Constructor
+
+ What is copy Constructor ? full detail
+     Whenever we pass object reference to the Constructor then it is called copy Constructor.
+
+Syntax:- class class-Name
+{
+    class_Name("class_Name"  variable)
+    {
+
+    }
+}
+---------------------------------------------------------------------------------------------------------
+4.Private Constructor:-
+
+ What is Private Constructor ?
