@@ -164,3 +164,14 @@ Syntax:- class class-Name
 4.Private Constructor:-
 
  What is Private Constructor ?
+ In java it is possible to write a Constructor as a private but according to
+  the rule we can't access private member outside of class. 
+
+Syntax:- class "class-name"
+{
+    private "class_Name"()
+    {
+
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------
