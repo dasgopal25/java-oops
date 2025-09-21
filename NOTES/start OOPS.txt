@@ -332,5 +332,84 @@ Types of Inheritance :-
  }
 
 
- 2.
- 
+ 2.Multi-level inheritance:- 
+  Syntax:
+  class super
+  {
+    //code
+  }
+  class sub1 extends super 
+  {
+    //code
+  }
+ class sub2 extends sub1 
+ {
+    //code
+ }
+----------------------------------------------------------------------------------------------------------------------------
+ 3. Multiple Inheritance:-
+  Why java doesn't support multiple inheritance ?
+   Whenever a sub class wants to inherit the property of two or more super classes that have same method,java compiler can't decide 
+   Which class method it should inherit.
+   
+   Then their meight be a chance of memory dublication.That is a reason java doesn't support multiple inheritance
+   through classes .
+
+Syntax:-
+    class A 
+    {
+        void m1(){
+            //code 
+        }
+    }
+    class B 
+    {
+        void m1(){
+            //code 
+        }
+    }
+    class c extends A,B 
+    {
+        c is in confusion m1 
+    }
+------------------------------------------------------------------------------------------------------------------------
+4.Hierarchical Inheritance:-
+  What is Hierarchical inheritance ?
+    A inheritance which contain only one super class and multiple sub class and all sub class directly extends super class called 
+    Hierarchical inheritance.
+
+Syntax:
+  class A 
+  {
+    //code
+  }
+  class B extends A 
+  {
+    //code
+  }
+  class C extends A 
+  {
+    //code
+  }
+------------------------------------------------------------------------------------------------------
+Super keyword in java :--
+   Super Keyword ? Full explaination.
+Super keyWord refers to the objects of super class, it is used when we want to call the super
+class variable , method & constructor through sub class object.
+
+Note:-
+i.Whenever the super class & sub class variable and method name both are same than it can be used only.
+ii.To avoid the confusion between super class and sub classes variables and methods that have same name we should use super keyword.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+This keyword in java :--
+   What is this keyWord ? full explaination.
+    i.this keyword refers to the current object inside a method or constructor.
+    
+    ii.Whenever the name of instance and local variables both are same then our runtime environment JVM gets confused that which
+    one is local variable & which one is instance variable, to avoid this problem use this keyword.
+
+    iii.It is also used when we want to call the default Constructor of its own class.
+
+    iv.It also called parameterized constructor of its own class.
+
+---------------------------------- Thank You !  Next file to start Polymorphism in java -------------------------------------
