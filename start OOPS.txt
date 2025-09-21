@@ -174,4 +174,163 @@ Syntax:- class "class-name"
 
     }
 }
---------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+overloading:
+-----------
+ Definition: Constructor overloading in Java means a class can have multiple 
+constructors with the same name (the class name) but different parameter lists 
+(different number or type of arguments).
+
+ Why use it?
+To initialize objects in different ways.
+Provides flexibility (default values, partial initialization, full initialization, etc.).
+
+Rule:
+The compiler differentiates constructors by the number and types of parameters 
+(not by return type, because constructors don’t have a return type).
+
+
+Example:
+--------
+class Student {
+    int id;
+    String name;
+
+    // Constructor 1: no arguments
+    Student() {
+        id = 0;
+        name = "Unknown";
+    }
+
+    // Constructor 2: one argument
+    Student(int i) {
+        id = i;
+        name = "Unknown";
+    }
+
+    // Constructor 3: two arguments
+    Student(int i, String n) {
+        id = i;
+        name = n;
+    }
+
+    void show() {
+        System.out.println(id + " " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();            // calls Constructor 1
+        Student s2 = new Student(101);         // calls Constructor 2
+        Student s3 = new Student(102, "Raj");  // calls Constructor 3
+
+        s1.show();
+        s2.show();
+        s3.show();
+    }
+}
+---------------------------------------------------------------------------------------------------
+static block:
+------------
+Static block is such kind of block in java which gets executed at the time of loading the .class file into JVM memory..
+                                                                           --------------------------------------------------------
+A.java -> javac -> A.class -------------run:static block of code --------->|class loader -> Byte code verifier -> Execution engine|JVM
+                                                                           --------------------------------------------------------
+Syntax:
+-----
+class A
+{
+    static
+    {
+        //code
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+instance block:
+-------------
+ What is instance block? with Example.
+instance block is simiar to method which has no name, it can be written inside a class only but not inside a method.
+
+Note:-
+  i.It always executed before constructors.
+  ii.We can use Variable only inside the instance block not method.
+  iii.We Write time consuming code inside a instance block like - JDBC connectivity.
+
+Syntax:-
+  class A 
+  {
+    {
+        //code
+    }
+  }
+------------------------------------------------------------------------------------------
+Instance vs Static block :-
+---------------------------
+Defference between instance & static block ?
+instance:- 
+  1.It deals with Object.
+  2.Executed at the time of Object creation.
+  3.No Any keyword required.
+  4.Static & non-static variable can  be accessed inside the instance block.
+
+Static:-
+  1.It deals with class.
+  2.Executed at the time of loaded .class file in JVM.
+  3.Static keyWord is required.
+  4.Only static variable can be accessed inside the static block.
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+  Inheritance:-
+  ------------
+What is Inheritance ? full explaination.
+ When We Construct a new class from existing class in such a way that
+the new class access all the features & properties of existing class called Inheritance. 
+
+Note:-
+ i.In,java "extends" keyWord is used to perform Inheritance.
+ ii.It Provides code reusability.
+ iii.We can't access private members of class through Inheritance.
+ iv.A such class contains all the features of super class so,we should create the object of sub class.
+ v.Method overriding only possible through Inheritance.
+
+ Syntax:-
+     class A 
+     {
+        // 2 method
+     }
+     class B extends A 
+     {
+        //3 method
+        // total 5 method
+     }
+
+Types of Inheritance :-
+---------------------
+1.Single / Simple inheritance:- A single class inherits from another single class. This is the most basic form of inheritance, where one subclass extends one superclass.
+ | super class -> sub class|one super class and one sub class
+
+2.Multi-level inheritance:-  A chain of inheritance where a class inherits from a class, which in turn inherits from another class.
+ |super -> sub1 -> sub2 -> sub3 |
+
+3.Hierarchical Inheritance: Multiple classes inherit from a single parent class. All child classes share the properties and methods of the same parent. 
+    sub1 -> superclass1
+    sub2 -> same class superclass1
+    sub3 -> same class superclass1
+
+4.Multiple Inheritance (via Interfaces):
+
+5.Hybrid Inheritance (via Interfaces and Classes):
+---------------------------------------------------------------------------------------------------------------------
+1.Simple inheritance: //private ko access nahi kor sakte but protected access kor sakte hai simple inheritance main..
+  Syntax:-
+   class super
+  {
+    //code
+  }
+ class sub extends super
+ {
+    //code
+ }
+
+
+ 2.
+ 
