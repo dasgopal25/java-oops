@@ -31,7 +31,8 @@ class B extends A
 
 public class Super_keyword {
     public static void main(String[] args) {
-        B r = new B(100);
-        r.show();
+        B r = new B(100);// parameter constructor
+        //B r1 = new B();//default constructor
+        r.show();//method
     }
 }

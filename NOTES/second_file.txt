@@ -1,1 +1,65 @@
 Polymorphism in java 
+----------------------
+*** Polymorphism ***
+ poly :- Many , Morphism :- Form   Many+Form = Manyform
+
+Polymorphism is the greek Word whose meaning is "same object having different behaviour"..
+ 
+ Example:
+ i.void person(Teacher)
+ ii.void person(Student)
+ iii.void person(friend)
+ iv.void person(customer)
+
+ Types of Polymorphism:-
+   1.compile time Polymorphism..... Also called Static Polymorphism or Early Binding.
+   2.runtime Polymorphism......... Also called Dynamic Polymorphism or Late Binding.
+------------------------------------------------------------------------------------------------------------------------------
+1.compile time Polymorphism:- 
+  A Polymorphism which is exists at the time of compilation is called compile time or Early Binding or Static Polymorphism.
+
+Example:- Method Overloading
+  
+  Whenever a class contain more than one Method with same name and different types of parameters called Method Overloading.
+
+Syntax:-
+    return-type method-name(param1);
+    return-type method-name same method name(param1,param2);
+----------------------------------------------------------------------------------------------------------------------------------
+2.Runtime Polymorphism
+ What is runtime Polymorphism ? in Detail.
+  A Polymorphism which exists at the time of excution of program is called runtime Polymorphism.
+
+Example:- Method overriding (without inheritance not use method overriding);
+          
+        Whenever we writing method in super and sub classes in such a way that method name and parameter 
+        must be same called method overriding.
+
+Syntax:- 
+    class A 
+    {
+        void show()
+        {
+            
+        }
+    }
+    class B extends A 
+    {
+        void show()
+        {
+
+        }
+    }
+------------------------------------------------------------------------------------------------------------------------
+*** Encapsulation ***
+  What is Encapsulation ? full explaination.
+  Encapsulation is a mechanism through which we can wrapping the data members and member method of 
+  class in a single unit called Encapsulation. 
+ 
+    Note:- 
+    i.Declare the class variables as a private.
+    ii.Declare the class method as a public
+
+Example:-    
+       class is the best example of Encapsulation
+--------------------------------------------------------------------------------------------------------------------------------
