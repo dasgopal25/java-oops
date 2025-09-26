@@ -63,3 +63,109 @@ Syntax:-
 Example:-    
        class is the best example of Encapsulation
 --------------------------------------------------------------------------------------------------------------------------------
+*** Abstraction ***
+ What is Abstraction ? Full explaination.
+ Abstraction is a process of hiding the implementation Detail from the user only the highlighted set of service provided
+ to the user.
+
+Advantage:-
+            1.Security.
+            2.Enhancement.
+
+Abstraction:-
+  i.Abstract class
+  ii.interface.
+
+---------------------------------------------
+** Abstract class ** 
+What is Abstract class ? in Detail.
+ A class which Contains the Abstract keyword in its Declaration is called Abstract class.
+
+ Note:-
+i.We can't create object for Abstract class.
+
+ii. It may or may not contain method
+
+iii.It can have Abstract & non-Abstract methods.
+
+iv. To use an Abstract class , you have to inherite it from sub classes.
+
+v. If a class contain portial implementation then we should declare a class as Abstract.
+ 
+ Syntax:
+   Abstract class A 
+   {
+
+   }
+   class A 
+   {
+    
+   }
+----------------------------------------------------------------------------------------------
+ ** Abstract method **
+ What is Abstract method ? Full explaination.
+ A method which contain Abstract modifier at the time of declaration is called Abstract method.
+
+ Note:-
+ i.It Can only be used in Abstract class.
+
+ ii.It doesn't contain any body "{ }" and always ends with ";".
+
+ iii.Abstract method must be overriden in sub classes otherwise it will also become a Abstract class.
+
+ iv.Whenever the Action is common but implementation are different then we should use Abstract method.
+ ---------------------------------------------------------------------------------------------------------
+ ** interface **
+  What is interface ? full explaination.
+Interfece is just like a class , which contain only Abstract method.
+    To achieve interface java provides a keyword called implements.
+
+  Note:-
+  i.Interfece method are by default public and Abstract.
+  ii.interface variables are by default public+Static+final.
+  iii.interface method must be overriden inside the implementing classes.
+  iv.interface nothing but deals between client & developer.
+------------------------------------------------------------------------------------------------------------------
+** Multiple inheritance **
+ Multiple inheritance using interface ?
+ We can achieve multiple inheritance through interface because interface contains only Abstract
+ method, which implementation is provided by the sub classes.
+
+ Note:
+  i. class c extends A,B (wrong)
+  i. class c implements A,B (right)
+-----------------------------------------------------------------------------------------
+** extending_interface **
+inheritance interface
+-----------------------------------------------------------------------------------------
+** interface JDK 1.8 **
+Before JDK 1.8 interface can only have Abstract method and all the Abstract method of interface
+must be overriden in implementating class as well as methods are public & Abstract by default.
+
+ From JDK 1.8 onwards interface can have default & Static method.
+
+ code default,
+ code Static.
+----------------------------------------------------------------------------------------------
+** interface JDK 1.9 **
+ From JDK 1.9 onwards interface can have private method also,and we can declare this private method as a static and non-satic. 
+
+ interface A 
+ {
+  public abstract void show();
+  public abstract void display(); 
+  -------------------------------1.8 JDK----
+  default void add(){ }
+  public static void sub(){ }
+  ----------------------------1.9 JDK --------
+  private void mul(){ }
+ }
+-------------------------------------------------------------------------------------------
+** co-varient return type **
+ 
+ What is co-varient return type? in Detail.
+ Before this concept generally we can't change the return-type of overriden method but new concept introduced
+ in java called co-varient where we can change the return-type of overriden method.
+--------------------------------------------------------------------------------------------------
+** var.arg method **
+What is var.arg method?full explaination.

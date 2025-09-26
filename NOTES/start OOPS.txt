@@ -42,7 +42,8 @@ Ex:-class "Class-Name"{
 }
 -----------------------------------------------------------------------------------
 ** Object **
-object:-Object is an instance of class that executed the class.
+object:-
+Object is an instance of class that executed the class.
 Once the object is created ,it takes up space like other variable in memory.
 
 Syntax:- "ClassName" "ObjectName" =   new    "className" ()
