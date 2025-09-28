@@ -1,0 +1,92 @@
+** Exception Handling **
+ What is Exception ? Full explaination.
+ An Exception is unexpected/unwanted/abnormal situation that occured at runtime called Exception.
+
+What is Exception Handling ?
+ In exception Handling,We should have an alternate source through which we can handle the exception
+
+ ** The object orientation mechanism has provided the following techniques to work with exception:-
+ i.try,  ii.catch,  iii.throw,  iv.throws,  v.finally
+---------------------------------------------------------------------------------------------------------------
+** What is exception hierarchy ? full explaination.
+ Throwable class is the super or root class of java exception hierarchy which contain two sub class 
+ that is:-
+ i.exception ,    ii,error.
+
+-----------------------------------------------------------------------
+** NullPonterException **
+[
+1.Exception:
+i.RuntimeException.
+ [ * ArithmeticException.
+  * NullPonterException
+  * NumberFormatException.
+  * IndexOutOfBoundsException.]
+  [
+       i. ArrayIndexOutOfBoundsException.
+       ii. StringIndexOfBoundsException.
+   ]
+ii.IOException.
+[
+    * EOFExcepion.
+    * FileNotFoundException.
+]
+iii.SQLException
+iv.ClassNotFoundException.
+]
+[
+2.Error:
+i.StackOverFlowError.
+ii.OutOfMemoryError.
+iii.IOError.
+iv.linkagError
+]
+------------------------------------------------------------------------------------------------
+** try & catch block **
+What is try block? full explaination.
+Whenever we write a statement and if the statement is error suspecting statement or risky code then 
+put that code inside the try block.
+
+catch:- The Main purpose of Catch block is to handle the exception which are throws by try block.
+
+Note:- Catch block will not be executed if their is no exception inside the try block.
+
+** Finally block **
+What is finally block? full explaination.
+ Finally block is a realtime block and the main purpose of finally block to handle the resources.
+--------------------------------------------------------------------------------------------------------------------
+** Interface vs Abstract class **
+Difference between interface and Abstract class?
+ interface:
+ i.Interface contain only abstract mrthod.
+ ii.It supports multiple inheritance.
+ iii.By default interface method are public abstract.
+ iv.By default interface variable are public + static + finaly.
+ v.Interface keyword is used to declare interface.
+ vi.Interface doesn't allow to declare a constructor.
+
+ Abstract:-
+ i.Abstract class contains both abstract & non abstract method.
+ ii.It doesn't supports multiple inheritance.
+ iii.there are no any restriction an abstract class method modifier.
+ iv.No need to declare variable as a public + static + finaly.
+ v.Abstract keyword is used to declare abstract class.
+ vi.Abstract class can declare constructor.
+----------------------------------------------------------------------------------------------------------------
+** multiple try-catch block ** 
+
+
+** multiple catch block **
+ which working with multiple catch the super class exception catch block must be at
+  the last catch block.
+
+  ---------------------------------------------------------------------------------------------
+** Nested try block **
+ What is nested try-block ? With example. 
+    A try block which contain inside another try block called nested try block.
+
+** Nested catch block **
+  What is nested catch-block ? With example.
+  An Catch block which cantain inside another catch block is called nested catch block.
+
+---------------------------------------------------------------------------------------------

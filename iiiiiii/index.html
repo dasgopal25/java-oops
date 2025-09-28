@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box ;
+        }
+        body{
+            background-color: rgb(63, 61, 61);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #container{
+           display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        video {
+           border-radius: 20px;
+            height: 500px;
+            width: 400px;
+            box-shadow: 0px 0px 10px 10px rgb(76, 75, 75);
+            border: 15px solid rgb(197, 130, 130);
+            padding: 0px 20px;
+          animation: moving 10s linear infinite ;
+        }
+        
+            @keyframes moving {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+       }
+    
+     
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+            <video src="video projec code.mp4" autoplay  ></video>
+       
+    </div>
+</body>
+</html>

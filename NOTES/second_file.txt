@@ -167,5 +167,33 @@ must be overriden in implementating class as well as methods are public & Abstra
  Before this concept generally we can't change the return-type of overriden method but new concept introduced
  in java called co-varient where we can change the return-type of overriden method.
 --------------------------------------------------------------------------------------------------
-** var.arg method **
+** var.args method **
 What is var.arg method?full explaination.
+var-arg known as variables number of argument method and it is new introduced in JDK 1.5v.
+ By using this concept we can pass any " "  of parameters including zero parameter to the calling method
+
+--------------------------------------------- Exception next file..thank you -----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
