@@ -90,3 +90,17 @@ Difference between interface and Abstract class?
   An Catch block which cantain inside another catch block is called nested catch block.
 
 ---------------------------------------------------------------------------------------------
+** Checked Vs Unchecked **
+ What is Checked and Unchecked exception ?
+
+ Checked:-
+ i.The exception which are Checked by compiler for smooth execution of program of runtime.
+ ii.Checked exception are commonly occured exception so,the compiler takes very much care about these exception.
+
+ Unchecked:-
+ i.The exception which are not Checked by compiler and it directly taken case by JVM.
+ ii.Unchecked exception are rarely occured exception so,the compiler doesn't take very much care about these exception.
+------------------------------------------------------------------------------------------------------
+** Nested Finally block **
+ What is nested finally block ? with example.
+ Whenever finally block cantains inside another finally block called nested finally block.
